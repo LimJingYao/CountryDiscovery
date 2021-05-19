@@ -7,15 +7,15 @@ library(shinythemes) # to have better user interface in shiny
 library(stringr)     # to trim string vectors
 
 # read all the dataset and using dataset1 as the base
-mydata <- data.frame(read.csv("dataset1.csv"))
-extra1 <- data.frame(read.csv("dataset2.csv"))
-extra2 <- data.frame(read.csv("dataset3.csv"))
-extra3 <- data.frame(read.csv("dataset4.csv"))
-extra4 <- data.frame(read.csv("dataset5.csv"))
-extra5 <- data.frame(read.csv("dataset6.csv"))
-extra6 <- data.frame(read.csv("dataset7.csv"))
-extra7 <- data.frame(read.csv("dataset8.csv"))
-extra8 <- data.frame(read.csv("dataset9.csv"))
+mydata <- data.frame(read.csv("dataset1.csv")) # Country,Region,Population,Area,Infant Mortality per 1000 births,GDP,Literacy Rate
+extra1 <- data.frame(read.csv("dataset2.csv")) # Suicide Rate
+extra2 <- data.frame(read.csv("dataset3.csv")) # Urbanization Rate
+extra3 <- data.frame(read.csv("dataset4.csv")) # Cost of Living Index,Groceries Index,Restaurant Price Index,Local Purchasing Power Index
+extra4 <- data.frame(read.csv("dataset5.csv")) # Total COVID-19 Cases,Total COVID-19 Deaths,Total COVID-19 Recovered 
+extra5 <- data.frame(read.csv("dataset6.csv")) # Outdoor Pollution Deaths per 100000
+extra6 <- data.frame(read.csv("dataset7.csv")) # Total Fertility Rate
+extra7 <- data.frame(read.csv("dataset8.csv")) # Happiness Score
+extra8 <- data.frame(read.csv("dataset9.csv")) # Crime Index
 
 # select and combine the wanted variables(columns) in the datasets
 mydata <- mydata[,c(1:4, 8:10)]
